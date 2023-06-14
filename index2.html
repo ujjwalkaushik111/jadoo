@@ -7,6 +7,8 @@
     <title>jadoo</title>
     <!-- css link  -->
     <link rel="stylesheet" href="./assets/css/style2.css">
+    <!-- aos link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- animate css link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- font awesome links  -->
@@ -25,7 +27,16 @@
         <div class="container_css position-relative  ">
             <div class="d-flex justify-content-between ">
                 <img src="./assets/image/svg/Logo.svg" alt="">
-                <ul class="d-flex gap-5 nav_bar " id="menu">
+
+                <input type="checkbox" id="menubox">
+          <label for="menubox">
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </label>
+
+                <ul class="d-flex gap-5 nav_bar " >
                     <li class="fw-normal pt-3 fs_smm ff_sen">Desitnations</li>
                     <li class="fw-normal pt-3 fs_smm ff_sen">Hotels</li>
                     <li class="fw-normal pt-3 fs_smm ff_sen">Flights</li>
@@ -37,23 +48,22 @@
                         <button class="dropbtn">eng <span class="ms-2"><img src="./assets/image/svg/downarrow.svg"
                                     alt=""></span></button>
                         <div class="dropdown-content z-3">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">language1</a>
+                            <a href="#">language2</a>
+                            <a href="#">language3</a>
                         </div>
                     </li>
     
                 </ul>
-    
+                
             </div>
-    
         </div>
     </nav>
     <!-- NAVBAR ENDS HERE  -->
     <!-- HEROSECTION STARTS HERE  -->
     <header>
         <div class="container_css">
-            <div class="row ">
+            <div class="row column_lg_reverse">
                 <div class="col-lg-6 mt-5 pt-5 ">
                     <p
                         class="color_orange fs_xmd ff_poppins fw-bold mt-4 animate__animated animate__pulse animate__infinite ">
@@ -251,7 +261,6 @@
             </div>
         </div>
     </div>
-    <div class="box d-flex justify-content-center m-5"></div>
 </main>
 <!-- BEST OFFERS SECTION ENDS HERE  -->
 
@@ -262,12 +271,11 @@
         crossorigin="anonymous"></script>
     <script>
         let menu = document.getElementById("menu")
-        function myfunction() {
+        function travel_nav() {
             menu.classList.toggle("show")
             document.body.classList.toggle("overflow-hidden")
         }
     </script>
-
 </body>
 
 </html>
