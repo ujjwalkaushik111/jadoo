@@ -626,6 +626,7 @@ p {
     background: #FFFFFF;
 }
 
+
 .plus_icone {
     position: absolute;
     right: -8%;
@@ -744,6 +745,11 @@ p {
         justify-content: center;
         transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         z-index: 10;
+    }
+
+
+    .overflow_hidden {
+        overflow: hidden;
     }
 
     .show {

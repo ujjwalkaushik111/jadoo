@@ -7,6 +7,7 @@
     <title>jaddo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/image/svg/Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- slick-theme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
@@ -27,6 +28,12 @@
 <body>
 
     <div class="overflow-hidden">
+
+        <div id="preloader"
+            class="min-vh-100 d-flex align-items-center justify-content-center bg-info position-fixed w-100 top-0 start-0 z-3 preloader-transition">
+            <div><img src="assets/image/svg/Logo.svg" alt="#"></div>
+        </div>
+
         <!-- NAVBAR STARTS HERE  -->
         <div class="overflow-hidden">
             <nav class="position-relative ">
@@ -71,7 +78,7 @@
             <!-- NAVBAR ENDS HERE  -->
             <!-- HEROSECTION STARTS HERE  -->
             <header>
-                <div class="container_css " id="Desitnations">
+                <div class="container_css">
                     <div class="row column_lg_reverse">
                         <div class="col-lg-6 mt-5 pt-5 ">
                             <p
@@ -147,7 +154,7 @@
         </div>
         <!-- HEROSECTION ENDS HERE  -->
         <!-- BEST OFFERS SECTION STARTS HERE  -->
-        <main class="position-relative">
+        <main class="position-relative" id="Flights">
             <img class="position-absolute plus_img" src="./assets/image/svg/plus_img.svg" alt="">
             <div class="container_css  my-5" id="Hotels">
                 <p class="d-flex justify-content-center ff_poppins fw-semibold fs_xxmd">CATEGORY</p>
@@ -279,7 +286,7 @@
         <!-- BEST OFFERS SECTION ENDS HERE  -->
 
         <!-- Top Destinations -->
-        <section class="py-5">
+        <section class="py-5" id="Desitnations">
             <div class="container_css">
                 <div class="text-center overflow-hidden">
                     <p class="m-0 pb-1 ff_poppins fw-semibold fs_xxmd color_lightblue">Top Selling</p>
@@ -366,7 +373,7 @@
 
         <!-- Easy and fast -->
         <section>
-            <div class="container_css py-5 ">
+            <div class="container_css py-5" id="Booking">
                 <div class="row">
                     <div class="col-lg-7 col-12 ">
                         <div class="ms-sm-5 ms-lg-0 ps-sm-5 ps-lg-0">
@@ -457,7 +464,7 @@
 
         <!-- Testimonials -->
         <section>
-            <div class="container_css">
+            <div class="container_css" id="Hotels">
                 <div class="row">
                     <div class="col-lg-6 col-12 my-5 ms-sm-5 ms-lg-0 ps-sm-5 ps-lg-0">
                         <h5 class="fw-semibold ff_poppins fs_xxmd color_lightblue Text-up">Testimonials</h5>
@@ -766,7 +773,7 @@
 
         function navbartoggle() {
             nav.classList.toggle("show")
-            document.body.classList.toggle("overflow-hidden")
+            document.body.classList.toggle("overflow_hidden")
         }
 
         function myfunction(x) {
@@ -806,7 +813,15 @@
 
             ]
         });
+
+        const preloader = document.getElementById("preloader")
+
+        setTimeout(() => {
+            preloader.classList.add("d-none")
+            document.body.classList.remove("overflow_hidden")
+        }, 3000)
     </script>
+
 
 </body>
 
