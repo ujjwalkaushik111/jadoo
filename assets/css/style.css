@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Volkhov:wght@400;700&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    box-sizing: border-box !important;
 }
 
 .container_css {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /* root */
@@ -32,7 +35,8 @@
     --ff-inter: 'inter';
     --ff-poppins: 'poppins';
     --ff-sen: 'Google Sans';
-    --color-darkblue: #212832;
+    --ff-Volkhov: 'Volkhov';
+    --color-darkbluelight: #212832;
     --color-lightblue: #5E6282;
     --color-darkblack: #181E4B;
     --color-darkblue: #14183E;
@@ -44,39 +48,9 @@
     --color-parpale: #8A79DF;
     --color-gray: #39425D;
     --color-white: #FFFFFF;
-    --section-bg: #FAF8ED;
-    --bg-orange: #f66f4d;
 
 }
 
-
-.color_white {
-    color: var(--color-white);
-}
-
-.light_gray {
-    color: var(--color-gray);
-}
-
-.color_parpale {
-    color: var(--color-parpale);
-}
-
-.color_darkblue {
-    color: var(--color-darkblue);
-}
-
-.color_grayday {
-    color: var(--color-grayday);
-}
-
-.color_darknight {
-    color: var(--color-darknight);
-}
-
-.color_lightgray {
-    color: var(--color-lightgray);
-}
 
 .fs_xxs {
     font-size: var(--fs-xxs);
@@ -122,7 +96,7 @@
     font-size: var(--fs-xxl);
 }
 
-.fs-2xl {
+.fs_2xl {
     font-size: var(--fs-2xl)
 }
 
@@ -142,8 +116,12 @@
     font-family: var(--ff-sen);
 }
 
-.color_darkblue {
-    color: var(--color-darkblue);
+.ff_Volkhov {
+    font-family: var(--ff-Volkhov);
+}
+
+.color_darkbluelight {
+    color: var(--color-darkbluelight);
 }
 
 .color_lightblue {
@@ -162,10 +140,230 @@
     color: var(--color-orange);
 }
 
-.bg_orange {
-    border-color: var(--bg-orange);
+.color_white {
+    color: var(--color-white);
 }
 
-.section_bg {
-    background-color: var(--section-bg);
+.light_gray {
+    color: var(--color-gray);
+}
+
+.color_parpale {
+    color: var(--color-parpale);
+}
+
+.color_darkblue {
+    color: var(--color-darkblue);
+}
+
+.color_grayday {
+    color: var(--color-grayday);
+}
+
+.w-511 {
+    max-width: 511px;
+}
+
+.color_darknight {
+    color: var(--color-darknight);
+}
+
+.color_lightgray {
+    color: var(--color-lightgray);
+}
+
+.Tcapitalize {
+    text-transform: capitalize
+}
+
+h5 {
+    margin-bottom: 0 !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
+
+.box-1 {
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 26px;
+}
+
+.image-scale {
+    transition: all 300ms linear;
+}
+
+.box-1:hover .image-scale {
+    scale: 1.5;
+}
+
+.box-2 {
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 18px;
+}
+
+.shadow-abs {
+    top: -1%;
+    left: 20%;
+
+}
+
+.bg-blue {
+    width: 300px;
+    height: 300px;
+    background-color: #59B1E6;
+    filter: blur(86px);
+}
+
+.Tample-abs {
+    position: absolute;
+    top: 43%;
+    left: 38%;
+    animation-name: tample;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+/* slick-slider */
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 18% !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75 !important;
+    color: #000 !important;
+}
+
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 12px !important;
+    line-height: 20px;
+    position: absolute;
+    top: -20px !important;
+    left: -584px !important;
+}
+
+.Text-up {
+    text-transform: uppercase;
+}
+
+.w-402 {
+    max-width: 408px;
+}
+
+.line-H {
+    line-height: 32px;
+}
+
+.box-3 {
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 10px;
+}
+
+.smile-abs {
+    top: -20%;
+    left: -8%;
+}
+
+.next1-abs {
+    top: 33%;
+    left: 100%;
+}
+
+.prev1-abs {
+    top: 62%;
+    left: 100%;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    /* height: 269px !important; */
+    margin: 0;
+    padding: 0;
+}
+
+.slick-slide {
+    opacity: 0;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.filter_darkgrey {
+    filter: grayscale(100%);
+}
+
+.filter_darkgrey:hover {
+    filter: grayscale(0%);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes tample {
+    50% {
+        transform: translate(30px, 0);
+    }
+}
+
+@media (max-width:1170px) {
+    .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        display: none !important;
+        width: 18% !important;
+    }
+}
+
+@media (max-width:992px) {
+    .Tample-abs {
+        position: absolute;
+        top: 52%;
+        left: 33%;
+    }
+
+    .next1-abs {
+        top: 42%;
+        left: 100%;
+    }
+
+
+    .prev1-abs {
+        top: 62%;
+        left: 100%;
+    }
+
+    .smile-abs {
+        top: -30%;
+        left: -6%;
+    }
+}
+
+@media (max-width:786px) {
+    :root {
+        --fs-2xl: 40px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .smile-abs {
+        top: -19%;
+        left: -25%;
+    }
 }

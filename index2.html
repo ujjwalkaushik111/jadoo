@@ -22,26 +22,18 @@
 </head>
 <!-- NAVBAR STARTS HERE  -->
 <div class="overflow-hidden">
-    <nav class="position-relative">
+    <nav class="position-relative ">
         <img class="position-absolute z-n1 herosection_bg" src="./assets/image/png/herosection_bg.png" alt="">
         <div class="container_css position-relative  ">
-            <div class="d-flex justify-content-between ">
-                <img src="./assets/image/svg/Logo.svg" alt="">
-
-                <input type="checkbox" id="menubox">
-          <label for="menubox">
-            <span></span>
-            <span></span>
-            <span></span>
-
-          </label>
-
-                <ul class="d-flex gap-5 nav_bar " >
-                    <li class="fw-normal pt-3 fs_smm ff_sen">Desitnations</li>
-                    <li class="fw-normal pt-3 fs_smm ff_sen">Hotels</li>
-                    <li class="fw-normal pt-3 fs_smm ff_sen">Flights</li>
-                    <li class="fw-normal pt-3 fs_smm ff_sen">Bookings</li>
-                    <li class="fw-normal pt-3 fs_smm ff_sen">Login</li>
+            <div class="d-flex justify-content-between  ">
+               <div class="pt-1"> <img class="z-n1" src="./assets/image/svg/Logo.svg" alt=""></div>
+                <ul class="d-flex gap-5 nav_bar " id="nav_click" >
+                    <li class="pt-3"><a onclick="navbartoggle()" class="text-black fw-normal fs_smm ff_sen" href="#Desitnations">Desitnations</a></li>
+                    <li class="pt-3"><a onclick="navbartoggle()" class="text-black fw-normal fs_smm ff_sen" href="#Hotels">Hotels</a></li>
+                    <li class="pt-3"><a onclick="navbartoggle()" class="text-black fw-normal fs_smm ff_sen" href="#Flights">Flights</a></li>
+                    <li class="pt-3"><a onclick="navbartoggle()" class="text-black fw-normal fs_smm ff_sen" href="#Booking">Booking</a></li>
+                    <li class="pt-3"><a onclick="navbartoggle()" class="text-black fw-normal fs_smm ff_sen" href="#Login">Login</a></li>
+                    
                     <li class="pt-3"><a class="fw-normal fs_smm ff_sen color_darkblack sign_up_btn" href="#">Sign up</a>
                     </li>
                     <li class="pt-3 dropdown position-relative   ">
@@ -57,12 +49,17 @@
                 </ul>
                 
             </div>
+           <div class="linebox d-lg-none " onclick="navbartoggle(),myfunction(this)">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+           </div> 
         </div>
     </nav>
     <!-- NAVBAR ENDS HERE  -->
     <!-- HEROSECTION STARTS HERE  -->
     <header>
-        <div class="container_css">
+        <div class="container_css " id="Desitnations">
             <div class="row column_lg_reverse">
                 <div class="col-lg-6 mt-5 pt-5 ">
                     <p
@@ -139,7 +136,7 @@
 <!-- BEST OFFERS SECTION STARTS HERE  -->
 <main class="position-relative">
     <img class="position-absolute plus_img" src="./assets/image/svg/plus_img.svg" alt="">
-    <div class="container_css  my-5">
+    <div class="container_css  my-5" id="Hotels">
         <p class="d-flex justify-content-center ff_poppins fw-semibold fs_xxmd">CATEGORY</p>
         <h2
             class="d-flex justify-content-center ff_valkhov fs-2xl fw-bold color_darkblue animate__animated animate__pulse animate__infinite">
@@ -270,12 +267,17 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script>
-        let menu = document.getElementById("menu")
-        function travel_nav() {
-            menu.classList.toggle("show")
+        const nav = document.getElementById("nav_click")
+        function navbartoggle() {
+            nav.classList.toggle("show")
             document.body.classList.toggle("overflow-hidden")
         }
+
+        function myfunction(x) {
+            x.classList.toggle("change");
+        }
     </script>
+    
 </body>
 
 </html>
