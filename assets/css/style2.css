@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -146,9 +147,11 @@
 .ff_sen {
     font-family: var(--ff-sen);
 }
-.ff_valkhov{
+
+.ff_valkhov {
     font-family: var(--ff-volkhov);
 }
+
 .color_darkblue {
     color: var(--color-darkblue);
 }
@@ -184,18 +187,19 @@
     outline: none;
 }
 
-.change .bar1{
+.change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
 
-.change .bar2{
+.change .bar2 {
     opacity: 0;
 }
 
-.change .bar3{
+.change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
-.linebox{
+
+.linebox {
     height: 40px;
     width: 40px;
     display: flex;
@@ -206,6 +210,7 @@
     top: 10px;
     z-index: 10;
 }
+
 nav .linebox span {
     height: 5px;
     width: 100%;
@@ -213,6 +218,7 @@ nav .linebox span {
     background-color: #080809;
 
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -280,31 +286,48 @@ nav .linebox span {
     top: 0;
     right: 0;
 }
-.plane_position2{
+
+.plane_position2 {
     right: 0%;
     top: 21%;
     z-index: -1;
     animation: plane 5s linear 0s infinite alternate;
 }
+
 @keyframes plane {
-    from {right:0px;}
-    to {top:100px;right:-100px;}
+    from {
+        right: 0px;
+    }
+
+    to {
+        top: 100px;
+        right: -100px;
+    }
 }
-.plane_animation1{
+
+.plane_animation1 {
     top: 10%;
     left: 0%;
     animation: plane2 5s linear 0s infinite alternate;
 }
+
 @keyframes plane2 {
-    from {left:0px;}
-    to {top:50px;left:100px;}
+    from {
+        left: 0px;
+    }
+
+    to {
+        top: 50px;
+        left: 100px;
+    }
 }
 
 .traveller_img {
     transform: translate(-10%, 0%);
 }
-.shadow_box{
-    transition: all ;
+
+.shadow_box {
+    transition: all;
 }
 
 .card_box:hover .shadow_box {
@@ -351,7 +374,7 @@ nav .linebox span {
 
 /* header btn classes  */
 .find_btn {
-    color: white ;
+    color: white;
     padding: 18px 27px;
     background: #F1A501;
     border: 1px solid #F1A501;
@@ -359,8 +382,9 @@ nav .linebox span {
     border-radius: 10px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.find_btn:hover{
-    color:#F1A501 ;
+
+.find_btn:hover {
+    color: #F1A501;
     background-color: #FFFFFF;
 }
 
@@ -369,13 +393,15 @@ nav .linebox span {
     border: 1px solid #212832;
     border-radius: 5px;
 }
-.youtube_btn{
+
+.youtube_btn {
     color: #FFFFFF;
     background-color: crimson;
     padding: 6px 12px;
     border-radius: 4px;
 
 }
+
 /* MEDIA QUERY  */
 @media (max-width:992px) {
     .nav_bar {
@@ -391,17 +417,18 @@ nav .linebox span {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 1s  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         z-index: 10;
     }
 
-    .show{
+    .show {
         left: 0;
-       
+
     }
-.column_lg_reverse{
-    flex-direction: column-reverse;
-}
+
+    .column_lg_reverse {
+        flex-direction: column-reverse;
+    }
 
 
 }
