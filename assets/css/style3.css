@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
     margin: 0;
@@ -19,12 +21,11 @@
 
 /* ----------form----------- */
 .form_box {
-    background: #DFD7F9;
-    opacity: 0.8;
+    background: rgba(223, 215, 249, 0.2);
     border-radius: 129px 20px 20px 20px;
 }
 
-.z_index_7{
+.z_index_7 {
     z-index: 5;
 }
 
@@ -39,15 +40,55 @@
     outline: none;
 }
 
-.about_jaddu_bg_image{
-    top: 36%;
+.about_jaddu_bg_image {
+    top: 34%;
     left: 5%;
+}
+
+.about_jaddu_bg_image_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.about_circel {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
+    border-radius: 50%;
+}
+
+.about_circel_position {
+    top: 0;
+    right: 0;
+    margin-top: -20px;
+    margin-right: -15px;
 }
 
 
 .Subscribe_btn {
     background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
     border-radius: 10px;
+    transition: all 200ms linear;
+}
+
+.Subscribe_btn:hover p {
+    color: rgba(255, 148, 109, 1);
+}
+
+.Subscribe_btn:hover {
+    background: #FFFFFF;
+}
+
+.plus_icone {
+    position: absolute;
+    right: -8%;
+    bottom: -17%;
+}
+
+div input placeholder{
+    color: red;
 }
 
 /* ---------top destination---------- */
@@ -58,8 +99,16 @@
     font-family: 'Volkhov';
 }
 
+.ff_Montserrat {
+    font-family: 'Montserrat';
+}
+
 .ff_poppins {
     font-family: 'poppins';
+}
+
+.ff_open_sans {
+    font-family: 'Open Sans';
 }
 
 .temple_card {
@@ -88,7 +137,7 @@
 }
 
 .zoom_in {
-    transition: all 0.5s ease-in;
+    transition: all 0.5s linear;
 }
 
 .img_radius {
@@ -294,4 +343,18 @@
 
 .section_bg {
     background-color: var(--section-bg);
+}
+
+@media (min-width:567px) {
+    .about_jaddu_bg_image {
+        top: 40%;
+        left: 4%;
+    }
+}
+
+@media (min-width: 768.95px) {
+    .about_jaddu_bg_image {
+        top: 34%;
+        left: 5%;
+    }
 }

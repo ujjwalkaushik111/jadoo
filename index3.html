@@ -6,31 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link rel="stylesheet" href="./assets/css/style3.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
-  <section class="vh-100">
-    <div class="container_css">
-      <div class="form_box position-relative py-5 overflow-hidden ">
-        <h2 class="text-center ff_poppins fw-semibold fs_xl color_lightblue py-5 position-relative z_index_7"> Subscribe to get information, latest
-          news and other<span class="d-inline-block">
-            interesting offers about Jadoo</span></h2>
-        <div class="d-flex justify-content-center py-5 z-2">
-          <div class="mail_box ps-3 d-inline-block justify-content-center align-items-center">
-            <img src="./assets/image/svg/mail-box.svg" alt="">
-            <input class="border_none ps-1 py-2 px-5 me-5" img type="email" placeholder="Your email">
-          </div>
-          <button class="ms-4 Subscribe_btn border_none">
-            <p class="m-0 py-2 px-4">Subscribe</p>
-          </button>
-        </div>
-        <img class="position-absolute about_jaddu_bg_image z-1" src="./assets/image/png/six_layer.png" alt="">
-      </div>
 
-    </div>
-  </section>
   <!-- Top Destinations -->
   <section class="py-5">
     <div class="container_css">
@@ -67,8 +51,8 @@
               <img class="w-100 img_radius zoom_in" src="./assets/image/png/london-tower.png" alt="rome-fort">
             </div>
             <div class="d-flex justify-content-between pt-3">
-              <p class="ps-2 m-0 ff_poppins fw-medium fs_xxmd color_lightblue">Rome, Italty</p>
-              <p class="pe-3 m-0 ff_poppins fw-medium fs_xxmd color_lightblue">$5,42k</p>
+              <p class="ps-2 m-0 ff_poppins fw-medium fs_xxmd color_lightblue">London, UK</p>
+              <p class="pe-3 m-0 ff_poppins fw-medium fs_xxmd color_lightblue">$4.2k</p>
             </div>
             <div class="d-flex pt-2 pb-4">
               <span class="ps-2">
@@ -78,7 +62,7 @@
                     fill="#080809" />
                 </svg>
               </span>
-              <p class="m-0 ps-2 ff_poppins fw-medium fs_sm color_lightblue">10 Days Trip</p>
+              <p class="m-0 ps-2 ff_poppins fw-medium fs_sm color_lightblue">12 Days Trip</p>
             </div>
           </div>
         </div>
@@ -89,7 +73,7 @@
             </div>
             <div class="temple_card">
               <div class="d-flex justify-content-between pt-3  ">
-                <p class="ps-2 m-0 ff_poppins fw-medium fs_xxmd color_lightblue">Rome, Italty</p>
+                <p class="ps-2 m-0 ff_poppins fw-medium fs_xxmd color_lightblue">Full Europe</p>
                 <p class="pe-3 m-0 ff_poppins fw-medium fs_xxmd color_lightblue">$5,42k</p>
               </div>
               <div class="d-flex pt-2 pb-4">
@@ -100,14 +84,11 @@
                       fill="#080809" />
                   </svg>
                 </span>
-                <p class="m-0 ps-2 ff_poppins fw-medium fs_sm color_lightblue">10 Days Trip</p>
+                <p class="m-0 ps-2 ff_poppins fw-medium fs_sm color_lightblue">28 Days Trip</p>
               </div>
             </div>
             <div class="side_line position-absolute z-n1 d-none d-sm-block">
               <img class="w-100" src="./assets/image/png/decore-line.png" alt="decore">
-            </div>
-            <div class="">
-
             </div>
           </div>
         </div>
@@ -115,6 +96,34 @@
     </div>
   </section>
   <!-- Top Destinations -->
+  <!-- about -->
+  <section class="py-5">
+    <div class="container_css py-5">
+      <div class="form_box position-relative py-5 ">
+        <h2 class="text-center ff_poppins fw-semibold fs_xl color_lightblue py-5 position-relative z_index_7"> Subscribe
+          to get information, latest
+          news and other<span class="d-inline-block">
+            interesting offers about Jadoo</span></h2>
+        <div class="d-sm-flex justify-content-center py-5 z-2">
+          <div class="mail_box ms-4 ms-sm-0 ps-3 d-inline-block justify-content-center align-items-center">
+            <img src="./assets/image/svg/mail-box.svg" alt="mail">
+            <input class="border_none ps-1 py-2 px-sn-5 me-5" img type="email" placeholder="Your email">
+          </div>
+          <button class="ms-4 mt-3 mt-sm-0 Subscribe_btn Subscribe border_none">
+            <p class="m-0 py-2 px-4 ff_open_sans fw-semibold fs_smm color_white">Subscribe</p>
+          </button>
+        </div>
+          <img class="position-absolute about_jaddu_bg_image d-none d-sm-block opacity-25 z-1" src="./assets/image/png/six_layer.png" alt="">
+          <img class="about_jaddu_bg_image_right opacity-25" src="./assets/image/png/six_layer2.png" alt="">
+        <div
+          class="about_circel zoom_in about_circel_position position-absolute d-flex justify-content-center align-items-center top-0">
+          <img src="./assets/image/svg/btn_icon.svg" alt="">
+        </div>
+        <img class="plus_icone d-none d-sm-block" src="./assets/image/svg/plus_icone.svg" alt="plus_icone">
+      </div>
+
+    </div>
+  </section>
   <!-- footer -->
   <footer class="py-5">
     <div class="container_css">
@@ -241,9 +250,12 @@
     </div>
 
   </footer>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
