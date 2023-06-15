@@ -323,6 +323,7 @@ nav .linebox span {
 .plane_animation1 {
     top: 10%;
     left: 0%;
+    z-index: -1;
     animation: plane2 5s linear 0s infinite alternate;
 }
 
@@ -740,7 +741,7 @@ p {
 
     .nav_bar {
         position: fixed;
-        margin-top: 20px;
+        margin-top: 0px;
         left: -100%;
         top: 0;
         width: 100%;
@@ -797,6 +798,25 @@ p {
     :root {
         --fs-2xl: 40px;
         --fs-3xl: 54px
+    }
+    .linebox {
+        height: 30px;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        z-index: 10;
+    }
+    
+    nav .linebox span {
+        height: 3px;
+        width: 100%;
+        margin-top: 6px;
+        background-color: #080809;
+    
     }
 }
 
