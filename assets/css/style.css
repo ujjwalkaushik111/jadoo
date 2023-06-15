@@ -604,6 +604,10 @@ p {
     border-radius: 50%;
 }
 
+.about_circel:hover {
+    background: linear-gradient(201.65deg, #FF946D 10.27%, #FF7D68 100%);
+}
+
 .about_circel_position {
     top: 0;
     right: 0;
@@ -641,6 +645,10 @@ p {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
+
+/* .z-index-10 {
+    z-index: 10 !important;
+} */
 
 .br_top_radius {
     border-top-left-radius: 24px;
@@ -788,6 +796,7 @@ p {
 @media (max-width:786px) {
     :root {
         --fs-2xl: 40px;
+        --fs-3xl: 54px
     }
 }
 
