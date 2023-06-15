@@ -577,8 +577,9 @@ p {
 
 .mail_box {
     background: #FFFFFF;
+    max-width: 421px;
     border-radius: 10px;
-    z-index: 10;
+    z-index: 2;
 }
 
 .border_none {
@@ -587,7 +588,7 @@ p {
 }
 
 .about_jaddu_bg_image {
-    top: 34%;
+    bottom: 0;
     left: 5%;
 }
 
@@ -620,15 +621,20 @@ p {
 .Subscribe_btn {
     background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
     border-radius: 10px;
-    transition: all 200ms linear;
-}
-
-.Subscribe_btn:hover p {
-    color: rgba(255, 148, 109, 1);
+    transition: all 300ms linear;
 }
 
 .Subscribe_btn:hover {
     background: #FFFFFF;
+    color: rgba(255, 148, 109, 1);
+}
+
+input[type="email"]{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight:400;
+    color: #39425D;
+
 }
 
 
@@ -822,14 +828,21 @@ p {
 
 @media (min-width:567px) {
     .about_jaddu_bg_image {
-        top: 40%;
         left: 4%;
+        bottom: 0;
+    }
+
+    .mail_box {
+        background: #FFFFFF;
+        width: 421px;
+        border-radius: 10px;
+        z-index: 2;
     }
 }
 
 @media (min-width: 768.95px) {
     .about_jaddu_bg_image {
-        top: 34%;
+        bottom: 0;
         left: 5%;
     }
 }
