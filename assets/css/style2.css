@@ -327,7 +327,7 @@ nav .linebox span {
 }
 
 .shadow_box {
-    transition: all;
+    transition: all 200ms ease-in;
 }
 
 .card_box:hover .shadow_box {
@@ -339,7 +339,7 @@ nav .linebox span {
 
 .orangebox_bg {
     display: none;
-    transition: 1s;
+    transition: all 200ms ease-in;
 }
 
 .card_box:hover .orangebox_bg {
@@ -348,6 +348,9 @@ nav .linebox span {
     left: -15%;
     z-index: -1;
 }
+ul li a:hover{
+    color: #14183E;
+} 
 
 .plus_img {
     right: 0;
@@ -380,7 +383,7 @@ nav .linebox span {
     border: 1px solid #F1A501;
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
     border-radius: 10px;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 200ms ease-in-out;
 }
 
 .find_btn:hover {
